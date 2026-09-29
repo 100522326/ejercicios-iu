@@ -1,0 +1,89 @@
+body {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: #1f3a2b;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 400px;
+  padding: 30px 40px 40px;
+  box-sizing: border-box;
+  background-color: #f7f3ec;
+  border: 1px solid #e8e2d6;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form img {
+  width: 110px;
+  height: 110px;
+  align-self: center;
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-size: 1.6em;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+
+input {
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 1.05em;
+  color: #1f3a2b;
+  background-color: #ffffff;
+  border: 2px solid #d8cfbf;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #8b6f47;
+  box-shadow: 0 0 0 3px rgba(139, 111, 71, 0.2);
+}
+
+input:valid {
+  border-color: #3c8d5a;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: #c0392b;
+}
+
+button {
+  margin-top: 30px;
+  padding: 12px;
+  font-family: inherit;
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #1f3a2b;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #8b6f47;
+}

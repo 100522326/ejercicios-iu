@@ -1,14 +1,18 @@
 body {
-  font-family: "Fredoka", sans-serif;
-  font-weight: 600;
-  background-color: #faf7f0;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
   color: #4a3f35;
+  margin: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tarjeta {
-  max-width: 350px;
-  margin: 60px auto;
-  padding: 30px;
+  width: 90%;
+  max-width: 550px;
+  padding: 50px;
+  box-sizing: border-box;
   text-align: center;
   background-color: #f5f0dc;
   border-radius: 20px;
@@ -16,22 +20,32 @@ body {
 }
 
 .tarjeta img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 220px;
+  height: 220px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.tarjeta h1 {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  font-size: 2.2em;
+}
+
+.tarjeta p {
+  font-size: 1.15em;
+  line-height: 1.6;
 }
 
 .tarjeta ul {
   list-style: none;
   padding: 0;
-}
-
-.tarjeta li {
-  margin: 8px 0;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .tarjeta a {
-  color: #8b6f47;
+  color: #808080;
   text-decoration: none;
 }

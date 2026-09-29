@@ -1,0 +1,70 @@
+body {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: #1f3a2b;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background-color: #f7f3ec;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.logo img {
+  width: 120px;
+  height: 120px;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  position: relative;
+  font-size: 1.3em;
+  color: #1f3a2b;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Subrayado animado: una línea que crece de 0 al 100% del ancho */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #8b6f47;
+  transition: width 0.3s;
+}
+
+nav a:hover {
+  color: #ad9898;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    padding: 10px 20px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
